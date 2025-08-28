@@ -65,25 +65,25 @@ Antes de desplegar la infraestructura, asegúrate de tener:
 ## Pasos para Desplegar
 
 1. Inicializar Terraform:
-```bash
+```bash```
 terraform init
 
-
 2. Verificar el plan de despliegue:
-```bash
+```bash```
 terraform plan -var-file="terraform.tfvars"
 
 3. Aplicar la infraestructura:
-```bash
+```bash```
 terraform apply -var-file="terraform.tfvars"
 
 4. Verificar los outputs para obtener información de la infraestructura:
-```bash
-terraform output
+```bash```
+terraform output```
 
 (Opcional) Para destruir toda la infraestructura:
-```bash
+```bash```
 terraform destroy -var-file="terraform.tfvars"
+
 
 Diagrama de EC2
 ![Diagrama EC2](images/ec2.png)
@@ -129,3 +129,4 @@ Asegúrate de que las subnets de bases de datos no entren en conflicto con otras
 La comunicación entre VPC principal y VPC de datos se realiza mediante VPC Peering, por lo que los security groups y rutas deben estar correctamente configurados.
 
 Todos los recursos tienen etiquetas (tags) consistentes para facilitar la identificación y administración.
+
